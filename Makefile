@@ -163,6 +163,7 @@ dist:
 
 
 clean:compiler_clean 
+	-$(DEL_FILE) $(TARGET) 
 	-$(DEL_FILE) $(OBJECTS)
 	-$(DEL_FILE) *~ core *.core
 
