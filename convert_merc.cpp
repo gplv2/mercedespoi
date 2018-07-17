@@ -30,7 +30,9 @@ int main(int argc, char **argv)
 
     if(argc < 2)
     {
-        puts("Usage: Comand-convert input-file.gpx output-file.gpx");
+
+        printf("Usage: %s input-file.gpx output-file.gpx\n",argv[0]);
+        //puts("Usage: Comand-convert input-file.gpx output-file.gpx");
         return(1);
     }
 
