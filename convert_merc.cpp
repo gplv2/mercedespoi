@@ -28,11 +28,10 @@ int main(int argc, char **argv)
     int x, y;
     bool bStarted = false;
 
-    if(argc < 2)
+    //printf("received: %d parameters\n",argc);
+    if(argc < 3)
     {
-
         printf("Usage: %s input-file.gpx output-file.gpx\n",argv[0]);
-        //puts("Usage: Comand-convert input-file.gpx output-file.gpx");
         return(1);
     }
 
