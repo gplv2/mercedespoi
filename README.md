@@ -1,3 +1,8 @@
+# Building:
+    qmake -project
+    qmake -makefile 
+    make all
+
 # mercedespoi
 Convert real GPX files to the extentions abomination of them known as Mercedes-Benz format 
 
