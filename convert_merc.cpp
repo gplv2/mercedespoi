@@ -75,7 +75,7 @@ int main(int argc, char **argv)
                 x = (str.indexOf("StreetAddress>") + 14);
                 y = (str.indexOf("</gpxx:StreetAddress>") );
                 str2 = str.mid(x, y - x);
-                str3 = "\t\t<gpxd:Address ISO=\"GB\" Country=\"GREAT BRITAIN\" State=\"\" City=\"\" CityCenter=\"\" Street=\"" + str2 + "\" Street2=\"\" HouseNo=\"\" ZIP=\"\"/>\n";
+                str3 = "\t\t<gpxd:Address ISO=\"BE\" Country=\"Belgium\" State=\"\" City=\"\" CityCenter=\"\" Street=\"" + str2 + "\" Street2=\"\" HouseNo=\"\" ZIP=\"\"/>\n";
                 outstream << str3;
             }
         }

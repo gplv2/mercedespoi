@@ -1,0 +1,22 @@
+<!--
+
+-->
+{{key=highway}}
+{{value=speed_camera}}
+
+
+<osm-script output="gpx">
+  <!-- fetch area “belgium” to search in -->
+  <id-query {{nominatimArea:Belgium}} into="area"/>
+  <!-- gather results -->
+  <union>
+   <query type="node">
+      <has-kv k="{{key}}" />
+      <area-query from="area"/>
+   </query>
+  </union>
+  <print from="_" limit="" mode="meta" order="id"/>
+  <print mode="meta"/>
+  <recurse type="down"/>
+  <print mode="meta"/>
+</osm-script>

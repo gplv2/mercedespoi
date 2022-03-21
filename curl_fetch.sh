@@ -1,0 +1,16 @@
+curl 'https://overpass-api.de/api/interpreter' \
+  -H 'Connection: keep-alive' \
+  -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"' \
+  -H 'Accept: */*' \
+  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Linux"' \
+  -H 'Origin: https://overpass-turbo.eu' \
+  -H 'Sec-Fetch-Site: cross-site' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Referer: https://overpass-turbo.eu/' \
+  -H 'Accept-Language: en-US,en;q=0.9' \
+  --data-raw $'data=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E%3C\u0021--%0AThis+query+looks+for+nodes%2C+ways+and+relations+%0Awith+the+given+key+present%0AChoose+your+region+and+hit+the+Run+button+above\u0021%0A--%3E%0A%0A%0A%0A%0A%3Cosm-script+output%3D%22xml%22%3E%0A++%3C\u0021--+fetch+area+%E2%80%9Cbelgium%E2%80%9D+to+search+in+--%3E%0A++%3Cid-query+type%3D%22area%22+ref%3D%223600052411%22+into%3D%22area%22%2F%3E%0A++%3C\u0021--+gather+results+--%3E%0A++%3Cunion%3E%0A+++%3Cquery+type%3D%22node%22%3E%0A++++++%3Chas-kv+k%3D%22highway%22+%2F%3E%0A++++++%3Carea-query+from%3D%22area%22%2F%3E%0A+++%3C%2Fquery%3E%0A++%3C%2Funion%3E%0A++%3Cprint+from%3D%22_%22+limit%3D%22%22+mode%3D%22meta%22+order%3D%22id%22%2F%3E%0A++%3Cprint+mode%3D%22meta%22%2F%3E%0A++%3Crecurse+type%3D%22down%22%2F%3E%0A++%3Cprint+mode%3D%22meta%22%2F%3E%0A%3C%2Fosm-script%3E' \
+  --compressed -o output.xml
