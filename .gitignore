@@ -1,0 +1,4 @@
+*.o
+mercedespoi
+__pycache__/
+.qmake.stash
