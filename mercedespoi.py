@@ -42,6 +42,7 @@ SPEED_ZONES = {
     "30":  {"category": "Speedcam 30",  "icon": 6,  "value": "12", "unit": "second"},
     "50":  {"category": "Speedcam 50",  "icon": 6,  "value": "36", "unit": "second"},
     "70":  {"category": "Speedcam 70",  "icon": 6,  "value": "25", "unit": "second"},
+    "80":  {"category": "Speedcam 80",  "icon": 16, "value": "22", "unit": "second"},
     "90":  {"category": "Speedcam 90",  "icon": 16, "value": "20", "unit": "second"},
     "100": {"category": "Speedcam 100", "icon": 16, "value": "18", "unit": "second"},
     "120": {"category": "Speedcam 120", "icon": 16, "value": "18", "unit": "second"},
