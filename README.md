@@ -161,6 +161,8 @@ The `maxspeed` tag comes directly from OpenStreetMap. Not all cameras have it â€
 
 # Mercedes-Benz COMAND Online GPX Format Reference
 
+> **Standalone format reference:** See **[DAIMLER_GPX_FORMAT.md](DAIMLER_GPX_FORMAT.md)** for the comprehensive community-maintained reference covering the complete DaimlerGPXExtensions format, XSD schema history, observed behavior quirks, and all community sources. The section below is a summary.
+
 **This section documents the DaimlerGPXExtensions format used by Mercedes-Benz COMAND Online (NTG 4.5 / NTG 5) for personal POI files.** This information has been pieced together by the community through reverse-engineering â€” Mercedes/Daimler has never published official public documentation. The original XSD schema files (`Daimler_GPX_Extension_V2_7_4.xsd` etc.) were hosted on daimler.com but are no longer accessible.
 
 ## Known Format Versions
