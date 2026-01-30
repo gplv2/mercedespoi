@@ -1,0 +1,4 @@
+# Generated GPX files — regenerate with:
+#   ./mercedespoi.py --region be-nl -o sd/PersonalPOI/speedcams.gpx
+#   mv sd/PersonalPOI/speedcams_routes.gpx sd/Routes/
+*.gpx
