@@ -25,9 +25,12 @@ import urllib.error
 OVERPASS_API = "https://overpass-api.de/api/interpreter"
 
 # Region definitions: name → Overpass area selector
-# Belgium area ID = 3600052411 (3600000000 + OSM relation 52411)
+# Area IDs: 3600000000 + OSM relation ID
+# Belgium = 52411, Netherlands = 47796, Luxembourg = 2171347
 REGIONS = {
     "belgium": 'area(3600052411)->.searchArea;',
+    "netherlands": 'area(3600047796)->.searchArea;',
+    "be-nl": '(area(3600052411); area(3600047796);)->.searchArea;',
     "antwerp": 'area["name"="Antwerpen"]["admin_level"="6"]->.searchArea;',
 }
 
